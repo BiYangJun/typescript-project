@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Hero from './views/Hero.vue'
+import ToDoList from './components/ToDoList.vue'
 
 Vue.use(Router)
 
@@ -12,6 +14,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path:'/hero',
+      name:'hero',
+      component:Hero
+    },
+    {
+      path:'/todolist',
+      name:'todolist',
+      component:ToDoList
     },
     {
       path: '/about',
